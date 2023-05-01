@@ -7,7 +7,7 @@ solusi untuk meningkatkan ergonomi dan kenyamanan kerja pada industri dan perusa
 
 ## Preview
 
-![screenshot](Penting/Preview.png)
+![screenshot](1.PETING!!/Preview.png)
 
 ## Database
 
