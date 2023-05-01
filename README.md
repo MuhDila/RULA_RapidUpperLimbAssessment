@@ -3,7 +3,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/MuhDila/RULA-RapidUpperLimbAssessment)
 
 Aplikasi perhitungan RULA (Rapid Upper Limb Assessment) menggunakan Java berbasis GUI sebagai 
-solusi untuk meningkatkan ergonomi dan kenyamanan kerja pada industri dan perusahaan.
+solusi untuk meningkatkan ergonomi dan kenyamanan kerja pada industri dan perusahaan. <strong>Aplikasi berjalan menggunakan Netbeans.
 
 ## Preview
 
