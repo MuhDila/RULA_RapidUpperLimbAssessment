@@ -16,7 +16,7 @@ solusi untuk meningkatkan ergonomi dan kenyamanan kerja pada industri dan perusa
   
   Untuk dapat menjalankan aplikasi dengan lancar maka ada beberapa hal yang harus disiapkan yaitu:
 * [IDE Java]([https://example.com](https://downloadersystem.wordpress.com/windows/programming/netbeans-ide-8-2-download/)): Netbeans 8.2
-* [JDK Version]([https://example.com](https://downloadersystem.wordpress.com/windows/programming/netbeans-ide-8-2-download/)): JDK Version 1.8
+* [JDK]([https://example.com](https://downloadersystem.wordpress.com/windows/programming/netbeans-ide-8-2-download/)): Version 1.8
   
 ## Database
 
