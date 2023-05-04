@@ -19,6 +19,9 @@ solusi untuk meningkatkan ergonomi dan kenyamanan kerja pada industri dan perusa
 * [JDK]([https://example.com](https://downloadersystem.wordpress.com/windows/programming/netbeans-ide-8-2-download/)): Version 1.8
 * [DATABASE]([https://example.com](https://downloadersystem.wordpress.com/windows/programming/netbeans-ide-8-2-download/)): MySQL XAMPP
  
+## Note
+Untuk class yang pertama kali dijalankan yaitu <strong>Form01_Home_Early.form
+ 
 ## Database
 
 Buat database terlebih dahulu dengan nama:
