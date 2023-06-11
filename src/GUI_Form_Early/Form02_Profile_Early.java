@@ -250,10 +250,19 @@ public class Form02_Profile_Early extends javax.swing.JFrame {
         PanelNIM.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 400, -1));
 
         TFNIM.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
-        TFNIM.setForeground(new java.awt.Color(40, 167, 69));
+        TFNIM.setForeground(new java.awt.Color(153, 153, 153));
         TFNIM.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TFNIM.setText("Masukan NIM disini");
         TFNIM.setBorder(null);
         TFNIM.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        TFNIM.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                TFNIMFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                TFNIMFocusLost(evt);
+            }
+        });
         PanelNIM.add(TFNIM, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 20, 400, 30));
 
         jPanel1.add(PanelNIM, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 120, 380, 50));
@@ -273,10 +282,19 @@ public class Form02_Profile_Early extends javax.swing.JFrame {
         PanelNama.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 400, -1));
 
         TFNama.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
-        TFNama.setForeground(new java.awt.Color(40, 167, 69));
+        TFNama.setForeground(new java.awt.Color(153, 153, 153));
         TFNama.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TFNama.setText("Masukan Nama disini");
         TFNama.setBorder(null);
         TFNama.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        TFNama.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                TFNamaFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                TFNamaFocusLost(evt);
+            }
+        });
         PanelNama.add(TFNama, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 20, 400, 30));
 
         jPanel1.add(PanelNama, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 190, 380, 50));
@@ -296,10 +314,19 @@ public class Form02_Profile_Early extends javax.swing.JFrame {
         PanelAlamat.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 400, -1));
 
         TFAlamat.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
-        TFAlamat.setForeground(new java.awt.Color(40, 167, 69));
+        TFAlamat.setForeground(new java.awt.Color(153, 153, 153));
         TFAlamat.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TFAlamat.setText("Masukan Alamat disini");
         TFAlamat.setBorder(null);
         TFAlamat.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        TFAlamat.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                TFAlamatFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                TFAlamatFocusLost(evt);
+            }
+        });
         PanelAlamat.add(TFAlamat, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 20, 400, 30));
 
         jPanel1.add(PanelAlamat, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 260, 380, 50));
@@ -319,10 +346,19 @@ public class Form02_Profile_Early extends javax.swing.JFrame {
         PanelUmur.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 400, -1));
 
         TFUmur.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
-        TFUmur.setForeground(new java.awt.Color(40, 167, 69));
+        TFUmur.setForeground(new java.awt.Color(153, 153, 153));
         TFUmur.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TFUmur.setText("Masukan Umur disini");
         TFUmur.setBorder(null);
         TFUmur.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        TFUmur.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                TFUmurFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                TFUmurFocusLost(evt);
+            }
+        });
         PanelUmur.add(TFUmur, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 20, 400, 30));
 
         jPanel1.add(PanelUmur, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 330, 380, 50));
@@ -342,10 +378,19 @@ public class Form02_Profile_Early extends javax.swing.JFrame {
         PanelPekerjaan.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 400, -1));
 
         TFPekerjaan.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
-        TFPekerjaan.setForeground(new java.awt.Color(40, 167, 69));
+        TFPekerjaan.setForeground(new java.awt.Color(153, 153, 153));
         TFPekerjaan.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TFPekerjaan.setText("Masukan Pekerjaan disini");
         TFPekerjaan.setBorder(null);
         TFPekerjaan.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        TFPekerjaan.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                TFPekerjaanFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                TFPekerjaanFocusLost(evt);
+            }
+        });
         PanelPekerjaan.add(TFPekerjaan, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 20, 400, 30));
 
         jPanel1.add(PanelPekerjaan, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 400, 380, 50));
@@ -387,10 +432,19 @@ public class Form02_Profile_Early extends javax.swing.JFrame {
         PanelTelepon.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 400, -1));
 
         TFTelepon.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
-        TFTelepon.setForeground(new java.awt.Color(40, 167, 69));
+        TFTelepon.setForeground(new java.awt.Color(153, 153, 153));
         TFTelepon.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TFTelepon.setText("Masukan No Telepon disini");
         TFTelepon.setBorder(null);
         TFTelepon.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        TFTelepon.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                TFTeleponFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                TFTeleponFocusLost(evt);
+            }
+        });
         PanelTelepon.add(TFTelepon, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 20, 400, 30));
 
         jPanel1.add(PanelTelepon, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 540, 380, 50));
@@ -515,6 +569,102 @@ public class Form02_Profile_Early extends javax.swing.JFrame {
         this.dispose();
         new Form03_Riwayat_Early().setVisible(true);
     }//GEN-LAST:event_ButtonHistoryActionPerformed
+
+    private void TFNIMFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_TFNIMFocusGained
+        // TODO add your handling code here:
+        if (TFNIM.getText().equals("Masukan NIM disini")) {
+            TFNIM.setText("");
+            TFNIM.setForeground(new Color(40,167,69));
+        }
+    }//GEN-LAST:event_TFNIMFocusGained
+
+    private void TFNamaFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_TFNamaFocusGained
+        // TODO add your handling code here:
+        if (TFNama.getText().equals("Masukan Nama disini")) {
+            TFNama.setText("");
+            TFNama.setForeground(new Color(40,167,69));
+        }
+    }//GEN-LAST:event_TFNamaFocusGained
+
+    private void TFAlamatFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_TFAlamatFocusGained
+        // TODO add your handling code here:
+        if (TFAlamat.getText().equals("Masukan Alamat disini")) {
+            TFAlamat.setText("");
+            TFAlamat.setForeground(new Color(40,167,69));
+        }
+    }//GEN-LAST:event_TFAlamatFocusGained
+
+    private void TFUmurFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_TFUmurFocusGained
+        // TODO add your handling code here:
+        if (TFUmur.getText().equals("Masukan Umur disini")) {
+            TFUmur.setText("");
+            TFUmur.setForeground(new Color(40,167,69));
+        }
+    }//GEN-LAST:event_TFUmurFocusGained
+
+    private void TFPekerjaanFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_TFPekerjaanFocusGained
+        // TODO add your handling code here:
+        if (TFPekerjaan.getText().equals("Masukan Pekerjaan disini")) {
+            TFPekerjaan.setText("");
+            TFPekerjaan.setForeground(new Color(40,167,69));
+        }
+    }//GEN-LAST:event_TFPekerjaanFocusGained
+
+    private void TFTeleponFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_TFTeleponFocusGained
+        // TODO add your handling code here:
+        if (TFTelepon.getText().equals("Masukan No Telepon disini")) {
+            TFTelepon.setText("");
+            TFTelepon.setForeground(new Color(40,167,69));
+        }
+    }//GEN-LAST:event_TFTeleponFocusGained
+
+    private void TFNIMFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_TFNIMFocusLost
+        // TODO add your handling code here:
+        if (TFNIM.getText().equals("")) {
+            TFNIM.setText("Masukan NIM disini");
+            TFNIM.setForeground(new Color(153,153,153));
+        }
+    }//GEN-LAST:event_TFNIMFocusLost
+
+    private void TFNamaFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_TFNamaFocusLost
+        // TODO add your handling code here:
+        if (TFNama.getText().equals("")) {
+            TFNama.setText("Masukan Nama disini");
+            TFNama.setForeground(new Color(153,153,153));
+        }
+    }//GEN-LAST:event_TFNamaFocusLost
+
+    private void TFAlamatFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_TFAlamatFocusLost
+        // TODO add your handling code here:
+        if (TFAlamat.getText().equals("")) {
+            TFAlamat.setText("Masukan Alamat disini");
+            TFAlamat.setForeground(new Color(153,153,153));
+        }
+    }//GEN-LAST:event_TFAlamatFocusLost
+
+    private void TFUmurFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_TFUmurFocusLost
+        // TODO add your handling code here:
+        if (TFUmur.getText().equals("")) {
+            TFUmur.setText("Masukan Umur disini");
+            TFUmur.setForeground(new Color(153,153,153));
+        }
+    }//GEN-LAST:event_TFUmurFocusLost
+
+    private void TFPekerjaanFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_TFPekerjaanFocusLost
+        // TODO add your handling code here:
+        if (TFPekerjaan.getText().equals("")) {
+            TFPekerjaan.setText("Masukan Pekerjaan disini");
+            TFPekerjaan.setForeground(new Color(153,153,153));
+        }
+    }//GEN-LAST:event_TFPekerjaanFocusLost
+
+    private void TFTeleponFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_TFTeleponFocusLost
+        // TODO add your handling code here:
+        if (TFTelepon.getText().equals("")) {
+            TFTelepon.setText("Masukan No Telepon disini");
+            TFTelepon.setForeground(new Color(153,153,153));
+        }
+    }//GEN-LAST:event_TFTeleponFocusLost
 
     /**
      * @param args the command line arguments
