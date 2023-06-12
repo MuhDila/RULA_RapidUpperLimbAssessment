@@ -390,7 +390,6 @@ public class Form03_Riwayat_Early extends javax.swing.JFrame {
             java.sql.PreparedStatement pstm = conn.prepareStatement(sql);
             pstm2.execute();
             pstm.execute();
-            JOptionPane.showMessageDialog(null, "Hapus Data Berhasil.");
             TampilkanData();
             PanelHapusData.setBackground(new java.awt.Color(220,53,69));
         }
