@@ -73,7 +73,7 @@ public class Form03_Riwayat_Early extends javax.swing.JFrame {
     // Setting apakah data dari tabel telah dipilih
     public void CheckEmpty(){
         String NIM = Form02_Profile_Early.TFNIM.getText();
-        if (NIM.equals("")) {
+        if (NIM.equals("")||NIM.equals("Masukan NIM disini")) {
             JOptionPane.showMessageDialog(this, "Pilih Data dari Tabel Terlebih Dahulu", "Pesan", JOptionPane.ERROR_MESSAGE);
         } else {
             PanelLihatDetail.setBackground(new java.awt.Color(40,167,69));
@@ -350,7 +350,7 @@ public class Form03_Riwayat_Early extends javax.swing.JFrame {
     private void ButtonLihatDetailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonLihatDetailActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new Form1_UpperArm_Early().setVisible(true);
+        new Form10_Result_Early().setVisible(true);
     }//GEN-LAST:event_ButtonLihatDetailActionPerformed
 
     private void TabelHistoryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TabelHistoryMouseClicked
@@ -379,7 +379,10 @@ public class Form03_Riwayat_Early extends javax.swing.JFrame {
 
     private void ButtonHapusDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonHapusDataActionPerformed
         // TODO add your handling code here:
-        try{
+        int opsi = JOptionPane.showConfirmDialog(null, "Apakah anda yakin ingin menghapus data tersebut?");
+        switch(opsi){
+            case JOptionPane.YES_OPTION:
+                try{
             String sql2= "DELETE FROM t_adjustdata WHERE nim ='"+ Form02_Profile_Early.TFNIM.getText()+"'";
             String sql= "DELETE FROM t_rula WHERE nim ='"+ Form02_Profile_Early.TFNIM.getText()+"'";
             java.sql.Connection conn=(Connection)Database.configDB();
@@ -393,6 +396,7 @@ public class Form03_Riwayat_Early extends javax.swing.JFrame {
         }
         catch(HeadlessException | SQLException e){
         JOptionPane.showMessageDialog(this, e.getMessage());
+        }
         }
     }//GEN-LAST:event_ButtonHapusDataActionPerformed
 

@@ -116,7 +116,6 @@ public class Form2_LowerArm_Early extends javax.swing.JFrame {
             int SA2 = st.executeUpdate(simpanAdjust);
             
             int SA = st.executeUpdate(simpan);
-            JOptionPane.showMessageDialog(null, "Data Berhasil Tersimpan");
             
             this.dispose();
             new Form3_Wrist_Early().setVisible(true);

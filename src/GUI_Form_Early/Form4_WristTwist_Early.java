@@ -110,7 +110,6 @@ public class Form4_WristTwist_Early extends javax.swing.JFrame {
             int SA2 = st.executeUpdate(simpanAdjust);
             
             int SA = st.executeUpdate(simpan);
-            JOptionPane.showMessageDialog(null, "Data Berhasil Tersimpan");
             
             this.dispose();
             new Form5_ArmWrist_MuscleUse_Early().setVisible(true);

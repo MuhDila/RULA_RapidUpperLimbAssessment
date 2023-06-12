@@ -64,7 +64,6 @@ public class Form02_Profile_Early extends javax.swing.JFrame {
                 
                 int SA = st.executeUpdate(simpan);
                 int SA2 = st.executeUpdate(simpanAjust);
-                JOptionPane.showMessageDialog(null, "Data Berhasil Tersimpan");
                 
                 // Masuk ke from selanjutnya
                 this.dispose();

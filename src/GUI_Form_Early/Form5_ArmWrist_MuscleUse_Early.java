@@ -124,7 +124,6 @@ public class Form5_ArmWrist_MuscleUse_Early extends javax.swing.JFrame {
             int SA2 = st.executeUpdate(simpanAdjust);
             
             int SA = st.executeUpdate(simpan);
-            JOptionPane.showMessageDialog(null, "Data Berhasil Tersimpan");
             
             this.dispose();
             new Form6_LocationNeck_Early().setVisible(true);

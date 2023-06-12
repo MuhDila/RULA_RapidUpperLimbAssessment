@@ -150,7 +150,6 @@ public class Form1_UpperArm_Early extends javax.swing.JFrame {
             int SA2 = st.executeUpdate(simpanAdjust);
             
             int SA = st.executeUpdate(simpan);
-            JOptionPane.showMessageDialog(null, "Data Berhasil Tersimpan");
             
             this.dispose();
             new Form2_LowerArm_Early().setVisible(true);

@@ -134,7 +134,6 @@ public class Form7_LocateTrunkPosition_Early extends javax.swing.JFrame {
             int SA2 = st.executeUpdate(simpanAdjust);
             
             int SA = st.executeUpdate(simpan);
-            JOptionPane.showMessageDialog(null, "Data Berhasil Tersimpan");
             
             this.dispose();
             new Form8_Legs_Early().setVisible(true);

@@ -117,7 +117,6 @@ public class Form8_Legs_Early extends javax.swing.JFrame {
             int SA2 = st.executeUpdate(simpanAdjust);
             
             int SA = st.executeUpdate(simpan);
-            JOptionPane.showMessageDialog(null, "Data Berhasil Tersimpan");
             
             this.dispose();
             new Form9_NeckTrunkLegs_MuscleUse_Early().setVisible(true);
