@@ -395,15 +395,31 @@ public class Form11_FullResult_Early extends javax.swing.JFrame {
                 switch (location_neck) {
                     case 1:
                         GambarLangkah6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iamges_Early/neck1.jpg")));
+                        ImageIcon ii1 = new ImageIcon(getClass().getResource("/Iamges_Early/neck1.jpg"));
+                        Image image1 = (ii1).getImage().getScaledInstance(GambarLangkah6.getWidth(), GambarLangkah6.getHeight(), Image.SCALE_SMOOTH);
+                        ii1 = new ImageIcon(image1);
+                        GambarLangkah6.setIcon(ii1);
                         break;
                     case 2:
                         GambarLangkah6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iamges_Early/neck2.jpg")));
+                        ImageIcon ii2 = new ImageIcon(getClass().getResource("/Iamges_Early/neck2.jpg"));
+                        Image image2 = (ii2).getImage().getScaledInstance(GambarLangkah6.getWidth(), GambarLangkah6.getHeight(), Image.SCALE_SMOOTH);
+                        ii2 = new ImageIcon(image2);
+                        GambarLangkah6.setIcon(ii2);
                         break;
                     case 3:
                         GambarLangkah6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iamges_Early/neck3.jpg")));
+                        ImageIcon ii3 = new ImageIcon(getClass().getResource("/Iamges_Early/neck3.jpg"));
+                        Image image3 = (ii3).getImage().getScaledInstance(GambarLangkah6.getWidth(), GambarLangkah6.getHeight(), Image.SCALE_SMOOTH);
+                        ii3 = new ImageIcon(image3);
+                        GambarLangkah6.setIcon(ii3);
                         break;
                     case 4:
                         GambarLangkah6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iamges_Early/neck4.jpg")));
+                        ImageIcon ii4 = new ImageIcon(getClass().getResource("/Iamges_Early/neck1.jpg"));
+                        Image image4 = (ii4).getImage().getScaledInstance(GambarLangkah6.getWidth(), GambarLangkah6.getHeight(), Image.SCALE_SMOOTH);
+                        ii4 = new ImageIcon(image4);
+                        GambarLangkah6.setIcon(ii4);
                         break;
                     default:
                         break;
@@ -449,15 +465,31 @@ public class Form11_FullResult_Early extends javax.swing.JFrame {
                 switch (locate_trunk) {
                     case 1:
                         GambarLangkah7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iamges_Early/trunk1.jpg")));
+                        ImageIcon ii1 = new ImageIcon(getClass().getResource("/Iamges_Early/trunk1.jpg"));
+                        Image image1 = (ii1).getImage().getScaledInstance(GambarLangkah7.getWidth(), GambarLangkah7.getHeight(), Image.SCALE_SMOOTH);
+                        ii1 = new ImageIcon(image1);
+                        GambarLangkah7.setIcon(ii1);
                         break;
                     case 2:
                         GambarLangkah7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iamges_Early/trunk2.jpg")));
+                        ImageIcon ii2 = new ImageIcon(getClass().getResource("/Iamges_Early/trunk2.jpg"));
+                        Image image2 = (ii2).getImage().getScaledInstance(GambarLangkah7.getWidth(), GambarLangkah7.getHeight(), Image.SCALE_SMOOTH);
+                        ii2 = new ImageIcon(image2);
+                        GambarLangkah7.setIcon(ii2);
                         break;
                     case 3:
                         GambarLangkah7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iamges_Early/trunk3.jpg")));
+                        ImageIcon ii3 = new ImageIcon(getClass().getResource("/Iamges_Early/trunk3.jpg"));
+                        Image image3 = (ii3).getImage().getScaledInstance(GambarLangkah7.getWidth(), GambarLangkah7.getHeight(), Image.SCALE_SMOOTH);
+                        ii3 = new ImageIcon(image3);
+                        GambarLangkah7.setIcon(ii3);
                         break;
                     case 4:
                         GambarLangkah7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iamges_Early/trunk4.jpg")));
+                        ImageIcon ii4 = new ImageIcon(getClass().getResource("/Iamges_Early/trunk4.jpg"));
+                        Image image4 = (ii4).getImage().getScaledInstance(GambarLangkah7.getWidth(), GambarLangkah7.getHeight(), Image.SCALE_SMOOTH);
+                        ii4 = new ImageIcon(image4);
+                        GambarLangkah7.setIcon(ii4);
                         break;
                     default:
                         break;
@@ -502,9 +534,17 @@ public class Form11_FullResult_Early extends javax.swing.JFrame {
                 switch (legs) {
                     case 1:
                         GambarLangkah8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iamges_Early/legs1.jpg")));
+                        ImageIcon ii1 = new ImageIcon(getClass().getResource("/Iamges_Early/legs1.jpg"));
+                        Image image1 = (ii1).getImage().getScaledInstance(GambarLangkah8.getWidth(), GambarLangkah8.getHeight(), Image.SCALE_SMOOTH);
+                        ii1 = new ImageIcon(image1);
+                        GambarLangkah8.setIcon(ii1);
                         break;
                     case 2:
                         GambarLangkah8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iamges_Early/legs2.jpg")));
+                        ImageIcon ii2 = new ImageIcon(getClass().getResource("/Iamges_Early/legs2.jpg"));
+                        Image image2 = (ii2).getImage().getScaledInstance(GambarLangkah8.getWidth(), GambarLangkah8.getHeight(), Image.SCALE_SMOOTH);
+                        ii2 = new ImageIcon(image2);
+                        GambarLangkah8.setIcon(ii2);
                         break;
                     default:
                         break;
@@ -614,6 +654,9 @@ public class Form11_FullResult_Early extends javax.swing.JFrame {
         PanelLangkah7();
         PanelLangkah8();
         PanelLangkah9();
+        
+        // Top up Dialog
+        JOptionPane.showMessageDialog(this, "Geser ke bawah untuk mencetak hasil dan kembali", "Pesan", JOptionPane.INFORMATION_MESSAGE);
     }
 
     /**
@@ -634,23 +677,6 @@ public class Form11_FullResult_Early extends javax.swing.JFrame {
         ButtonCetakHasil = new javax.swing.JButton();
         LabelRula = new javax.swing.JLabel();
         LabelRingkasanLengkap = new javax.swing.JLabel();
-        PanelLangkah7 = new GUI_Custom.PanelRound();
-        LabelLangkah7 = new javax.swing.JLabel();
-        GambarLangkah7 = new javax.swing.JLabel();
-        LabelLangkah7a = new javax.swing.JLabel();
-        CheckBoxLangkah7 = new GUI_Custom.JCheckBoxCustom();
-        GambarCheckBoxLangkah7 = new javax.swing.JLabel();
-        PanelLangkah8 = new GUI_Custom.PanelRound();
-        LabelLangkah8 = new javax.swing.JLabel();
-        GambarLangkah8 = new javax.swing.JLabel();
-        PanelLangkah9 = new GUI_Custom.PanelRound();
-        LabelLangkah9 = new javax.swing.JLabel();
-        GambarBorderLangkah9 = new javax.swing.JLabel();
-        LabelScoreLangkah9 = new javax.swing.JLabel();
-        LabelKetScoreLangkah9 = new javax.swing.JLabel();
-        LabelLangkah9a = new javax.swing.JLabel();
-        CheckBoxLangkah9 = new GUI_Custom.JCheckBoxCustom();
-        LabelKetCheckBoxLangkah9 = new javax.swing.JLabel();
         PanelScoreRula = new GUI_Custom.PanelRound();
         LabelScore = new javax.swing.JLabel();
         LabelLevel = new javax.swing.JLabel();
@@ -714,6 +740,23 @@ public class Form11_FullResult_Early extends javax.swing.JFrame {
         LabelLangkah6a = new javax.swing.JLabel();
         CheckBoxLangkah6 = new GUI_Custom.JCheckBoxCustom();
         GambarCheckBoxLangkah6 = new javax.swing.JLabel();
+        PanelLangkah7 = new GUI_Custom.PanelRound();
+        LabelLangkah7 = new javax.swing.JLabel();
+        GambarLangkah7 = new javax.swing.JLabel();
+        LabelLangkah7a = new javax.swing.JLabel();
+        CheckBoxLangkah7 = new GUI_Custom.JCheckBoxCustom();
+        GambarCheckBoxLangkah7 = new javax.swing.JLabel();
+        PanelLangkah8 = new GUI_Custom.PanelRound();
+        LabelLangkah8 = new javax.swing.JLabel();
+        GambarLangkah8 = new javax.swing.JLabel();
+        PanelLangkah9 = new GUI_Custom.PanelRound();
+        LabelLangkah9 = new javax.swing.JLabel();
+        LabelScoreLangkah9 = new javax.swing.JLabel();
+        LabelKetScoreLangkah9 = new javax.swing.JLabel();
+        GambarBorderLangkah9 = new javax.swing.JLabel();
+        LabelLangkah9a = new javax.swing.JLabel();
+        CheckBoxLangkah9 = new GUI_Custom.JCheckBoxCustom();
+        LabelKetCheckBoxLangkah9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1220, 768));
@@ -769,7 +812,7 @@ public class Form11_FullResult_Early extends javax.swing.JFrame {
             .addComponent(ButtonBack, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        jPanel1.add(PanelBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 1610, 110, -1));
+        jPanel1.add(PanelBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 1590, 110, -1));
 
         PanelCetakHasil.setBackground(new java.awt.Color(40, 167, 69));
         PanelCetakHasil.setRoundBottomLeft(25);
@@ -797,14 +840,14 @@ public class Form11_FullResult_Early extends javax.swing.JFrame {
         PanelCetakHasil.setLayout(PanelCetakHasilLayout);
         PanelCetakHasilLayout.setHorizontalGroup(
             PanelCetakHasilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(ButtonCetakHasil, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
+            .addComponent(ButtonCetakHasil, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
         );
         PanelCetakHasilLayout.setVerticalGroup(
             PanelCetakHasilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(ButtonCetakHasil, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        jPanel1.add(PanelCetakHasil, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 1610, 130, -1));
+        jPanel1.add(PanelCetakHasil, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 1590, 130, -1));
 
         LabelRula.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
         LabelRula.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -815,107 +858,6 @@ public class Form11_FullResult_Early extends javax.swing.JFrame {
         LabelRingkasanLengkap.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LabelRingkasanLengkap.setText("Ringkasan Lengkap Hasil RULA");
         jPanel1.add(LabelRingkasanLengkap, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 1220, -1));
-
-        PanelLangkah7.setBackground(new java.awt.Color(255, 255, 255));
-        PanelLangkah7.setRoundBottomLeft(50);
-        PanelLangkah7.setRoundBottomRight(50);
-        PanelLangkah7.setRoundTopLeft(50);
-        PanelLangkah7.setRoundTopRight(50);
-        PanelLangkah7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        LabelLangkah7.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        LabelLangkah7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LabelLangkah7.setText("Langkah 7: Posisi Batang Tubuh");
-        PanelLangkah7.add(LabelLangkah7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 470, -1));
-
-        GambarLangkah7.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
-        GambarLangkah7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        GambarLangkah7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iamges_Early/neck1.jpg"))); // NOI18N
-        PanelLangkah7.add(GambarLangkah7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 450, 220));
-
-        LabelLangkah7a.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        LabelLangkah7a.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LabelLangkah7a.setText("Langkah 7a: Penyesuaian Posisi");
-        PanelLangkah7.add(LabelLangkah7a, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 470, -1));
-
-        CheckBoxLangkah7.setText("Jika batang terpelintir");
-        CheckBoxLangkah7.setEnabled(false);
-        CheckBoxLangkah7.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
-        PanelLangkah7.add(CheckBoxLangkah7, new org.netbeans.lib.awtextra.AbsoluteConstraints(152, 300, -1, -1));
-
-        GambarCheckBoxLangkah7.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
-        GambarCheckBoxLangkah7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        GambarCheckBoxLangkah7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iamges_Early/trunk5.jpg"))); // NOI18N
-        GambarCheckBoxLangkah7.setEnabled(false);
-        PanelLangkah7.add(GambarCheckBoxLangkah7, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 330, 200, 150));
-
-        jPanel1.add(PanelLangkah7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 1960, 480, 490));
-
-        PanelLangkah8.setBackground(new java.awt.Color(255, 255, 255));
-        PanelLangkah8.setRoundBottomLeft(50);
-        PanelLangkah8.setRoundBottomRight(50);
-        PanelLangkah8.setRoundTopLeft(50);
-        PanelLangkah8.setRoundTopRight(50);
-        PanelLangkah8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        LabelLangkah8.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        LabelLangkah8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LabelLangkah8.setText("Langkah 8: Posisi Kaki");
-        PanelLangkah8.add(LabelLangkah8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 470, -1));
-
-        GambarLangkah8.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
-        GambarLangkah8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        GambarLangkah8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iamges_Early/legs1.jpg"))); // NOI18N
-        PanelLangkah8.add(GambarLangkah8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 450, 220));
-
-        jPanel1.add(PanelLangkah8, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 1960, 470, 490));
-
-        PanelLangkah9.setBackground(new java.awt.Color(255, 255, 255));
-        PanelLangkah9.setRoundBottomLeft(50);
-        PanelLangkah9.setRoundBottomRight(50);
-        PanelLangkah9.setRoundTopLeft(50);
-        PanelLangkah9.setRoundTopRight(50);
-        PanelLangkah9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        LabelLangkah9.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        LabelLangkah9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LabelLangkah9.setText("Langkah 9: Beban Yang Mencerminkan Situasi");
-        PanelLangkah9.add(LabelLangkah9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 480, -1));
-
-        GambarBorderLangkah9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iamges_Early/WidgetCornerMuscle.png"))); // NOI18N
-        GambarBorderLangkah9.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        PanelLangkah9.add(GambarBorderLangkah9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, 400, 80));
-
-        LabelScoreLangkah9.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        LabelScoreLangkah9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LabelScoreLangkah9.setText("Score 0");
-        LabelScoreLangkah9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        PanelLangkah9.add(LabelScoreLangkah9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 390, 20));
-
-        LabelKetScoreLangkah9.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
-        LabelKetScoreLangkah9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LabelKetScoreLangkah9.setText("Jika beban < 2 kg (terputus-putus)");
-        LabelKetScoreLangkah9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        PanelLangkah9.add(LabelKetScoreLangkah9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 390, -1));
-
-        LabelLangkah9a.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        LabelLangkah9a.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LabelLangkah9a.setText("Langkah 9a: Penyesuaian Beban");
-        PanelLangkah9.add(LabelLangkah9a, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 480, -1));
-
-        CheckBoxLangkah9.setText("Jika postur tubuh sebagian besar statis (yaitu ditahan ");
-        CheckBoxLangkah9.setEnabled(false);
-        CheckBoxLangkah9.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
-        PanelLangkah9.add(CheckBoxLangkah9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 410, -1));
-
-        LabelKetCheckBoxLangkah9.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
-        LabelKetCheckBoxLangkah9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LabelKetCheckBoxLangkah9.setText(">10 menit) Jika beban < 2 kg (terputus-putus)");
-        LabelKetCheckBoxLangkah9.setEnabled(false);
-        LabelKetCheckBoxLangkah9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        PanelLangkah9.add(LabelKetCheckBoxLangkah9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 330, 390, 30));
-
-        jPanel1.add(PanelLangkah9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 2470, 480, 490));
 
         PanelScoreRula.setBackground(new java.awt.Color(255, 193, 7));
         PanelScoreRula.setRoundBottomLeft(50);
@@ -955,117 +897,117 @@ public class Form11_FullResult_Early extends javax.swing.JFrame {
         PanelDetailProfile.setRoundTopRight(50);
         PanelDetailProfile.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        LabelDetailPribadi.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        LabelDetailPribadi.setFont(new java.awt.Font("Poppins", 1, 18)); // NOI18N
         LabelDetailPribadi.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LabelDetailPribadi.setText("Detail pribadi");
-        PanelDetailProfile.add(LabelDetailPribadi, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 540, -1));
+        PanelDetailProfile.add(LabelDetailPribadi, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 540, -1));
 
-        LabelNIM.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelNIM.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         LabelNIM.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         LabelNIM.setText("NIM");
         PanelDetailProfile.add(LabelNIM, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 120, -1));
 
-        LabelTitikNIM.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelTitikNIM.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         LabelTitikNIM.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         LabelTitikNIM.setText(":");
         PanelDetailProfile.add(LabelTitikNIM, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 50, 10, -1));
 
-        LabelIsiNIM.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelIsiNIM.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         LabelIsiNIM.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         LabelIsiNIM.setText("123123123123123");
         PanelDetailProfile.add(LabelIsiNIM, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 50, 270, -1));
 
-        LabelNama.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelNama.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         LabelNama.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         LabelNama.setText("Nama");
-        PanelDetailProfile.add(LabelNama, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, 120, -1));
+        PanelDetailProfile.add(LabelNama, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 75, 120, -1));
 
-        LabelTitikNama.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelTitikNama.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         LabelTitikNama.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         LabelTitikNama.setText(":");
-        PanelDetailProfile.add(LabelTitikNama, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 70, 10, -1));
+        PanelDetailProfile.add(LabelTitikNama, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 75, 10, -1));
 
-        LabelIsiNama.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelIsiNama.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         LabelIsiNama.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         LabelIsiNama.setText("Muhammad Dila");
-        PanelDetailProfile.add(LabelIsiNama, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 70, 270, -1));
+        PanelDetailProfile.add(LabelIsiNama, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 75, 270, -1));
 
-        LabelAlamat.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelAlamat.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         LabelAlamat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         LabelAlamat.setText("Alamat");
-        PanelDetailProfile.add(LabelAlamat, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, 120, -1));
+        PanelDetailProfile.add(LabelAlamat, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, 120, -1));
 
-        LabelTitikAlamat.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelTitikAlamat.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         LabelTitikAlamat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         LabelTitikAlamat.setText(":");
-        PanelDetailProfile.add(LabelTitikAlamat, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 90, 10, -1));
+        PanelDetailProfile.add(LabelTitikAlamat, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 100, 10, -1));
 
-        LabelIsiAlamat.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelIsiAlamat.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         LabelIsiAlamat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         LabelIsiAlamat.setText("Jl. Cempaka 1 No. 31233 Ra123123nk");
-        PanelDetailProfile.add(LabelIsiAlamat, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 90, 270, -1));
+        PanelDetailProfile.add(LabelIsiAlamat, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 270, -1));
 
-        LabelUmur.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelUmur.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         LabelUmur.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         LabelUmur.setText("Umur");
-        PanelDetailProfile.add(LabelUmur, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 120, -1));
+        PanelDetailProfile.add(LabelUmur, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 125, 120, -1));
 
-        LabelTitikUmur.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelTitikUmur.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         LabelTitikUmur.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         LabelTitikUmur.setText(":");
-        PanelDetailProfile.add(LabelTitikUmur, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 110, 10, -1));
+        PanelDetailProfile.add(LabelTitikUmur, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 125, 10, -1));
 
-        LabelIsiUmur.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelIsiUmur.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         LabelIsiUmur.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         LabelIsiUmur.setText("20");
-        PanelDetailProfile.add(LabelIsiUmur, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 110, 270, -1));
+        PanelDetailProfile.add(LabelIsiUmur, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 125, 270, -1));
 
-        LabelPekerjaan.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelPekerjaan.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         LabelPekerjaan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         LabelPekerjaan.setText("Pekerjaan");
-        PanelDetailProfile.add(LabelPekerjaan, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, 120, -1));
+        PanelDetailProfile.add(LabelPekerjaan, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, 120, -1));
 
-        LabelTitikPekerjaan.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelTitikPekerjaan.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         LabelTitikPekerjaan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         LabelTitikPekerjaan.setText(":");
-        PanelDetailProfile.add(LabelTitikPekerjaan, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 130, 10, -1));
+        PanelDetailProfile.add(LabelTitikPekerjaan, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, 10, -1));
 
-        LabelIsiPekerjaan.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelIsiPekerjaan.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         LabelIsiPekerjaan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         LabelIsiPekerjaan.setText("Mahasiswa");
-        PanelDetailProfile.add(LabelIsiPekerjaan, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 130, 270, -1));
+        PanelDetailProfile.add(LabelIsiPekerjaan, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 270, -1));
 
-        LabelKelamin.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelKelamin.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         LabelKelamin.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        LabelKelamin.setText("Jenis Kelamin");
-        PanelDetailProfile.add(LabelKelamin, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, 120, -1));
+        LabelKelamin.setText("J. Kelamin");
+        PanelDetailProfile.add(LabelKelamin, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 175, 120, -1));
 
-        LabelTitikKelamin.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelTitikKelamin.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         LabelTitikKelamin.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         LabelTitikKelamin.setText(":");
-        PanelDetailProfile.add(LabelTitikKelamin, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, 10, -1));
+        PanelDetailProfile.add(LabelTitikKelamin, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 175, 10, -1));
 
-        LabelIsiKelamin.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelIsiKelamin.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         LabelIsiKelamin.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         LabelIsiKelamin.setText("Laki-laki");
-        PanelDetailProfile.add(LabelIsiKelamin, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 270, -1));
+        PanelDetailProfile.add(LabelIsiKelamin, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 175, 270, -1));
 
-        LabelTelepon.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelTelepon.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         LabelTelepon.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         LabelTelepon.setText("No Telepon");
-        PanelDetailProfile.add(LabelTelepon, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, 120, -1));
+        PanelDetailProfile.add(LabelTelepon, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 200, 120, -1));
 
-        LabelTitikTelepon.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelTitikTelepon.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         LabelTitikTelepon.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         LabelTitikTelepon.setText(":");
-        PanelDetailProfile.add(LabelTitikTelepon, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, 10, -1));
+        PanelDetailProfile.add(LabelTitikTelepon, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 10, -1));
 
-        LabelIsiTelepon.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelIsiTelepon.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         LabelIsiTelepon.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         LabelIsiTelepon.setText("123123123123123");
-        PanelDetailProfile.add(LabelIsiTelepon, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 170, 270, -1));
+        PanelDetailProfile.add(LabelIsiTelepon, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 200, 270, -1));
 
-        jPanel1.add(PanelDetailProfile, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 100, 540, 220));
+        jPanel1.add(PanelDetailProfile, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 90, 540, 230));
 
         PanelLangkah1.setBackground(new java.awt.Color(255, 255, 255));
         PanelLangkah1.setRoundBottomLeft(50);
@@ -1271,6 +1213,107 @@ public class Form11_FullResult_Early extends javax.swing.JFrame {
         PanelLangkah6.add(GambarCheckBoxLangkah6, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 90, 120, 110));
 
         jPanel1.add(PanelLangkah6, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 840, 560, 230));
+
+        PanelLangkah7.setBackground(new java.awt.Color(255, 255, 255));
+        PanelLangkah7.setRoundBottomLeft(50);
+        PanelLangkah7.setRoundBottomRight(50);
+        PanelLangkah7.setRoundTopLeft(50);
+        PanelLangkah7.setRoundTopRight(50);
+        PanelLangkah7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        LabelLangkah7.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelLangkah7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelLangkah7.setText("Langkah 7: Posisi Batang Tubuh");
+        PanelLangkah7.add(LabelLangkah7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 260, -1));
+
+        GambarLangkah7.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
+        GambarLangkah7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        GambarLangkah7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iamges_Early/neck1.jpg"))); // NOI18N
+        PanelLangkah7.add(GambarLangkah7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, 100, 140));
+
+        LabelLangkah7a.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelLangkah7a.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelLangkah7a.setText("Langkah 7a: Penyesuaian Posisi");
+        PanelLangkah7.add(LabelLangkah7a, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 240, -1));
+
+        CheckBoxLangkah7.setText("Jika batang terpelintir");
+        CheckBoxLangkah7.setEnabled(false);
+        CheckBoxLangkah7.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
+        PanelLangkah7.add(CheckBoxLangkah7, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 60, 160, -1));
+
+        GambarCheckBoxLangkah7.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
+        GambarCheckBoxLangkah7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        GambarCheckBoxLangkah7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iamges_Early/trunk5.jpg"))); // NOI18N
+        GambarCheckBoxLangkah7.setEnabled(false);
+        PanelLangkah7.add(GambarCheckBoxLangkah7, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 90, 120, 110));
+
+        jPanel1.add(PanelLangkah7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 1090, 560, 220));
+
+        PanelLangkah8.setBackground(new java.awt.Color(255, 255, 255));
+        PanelLangkah8.setRoundBottomLeft(50);
+        PanelLangkah8.setRoundBottomRight(50);
+        PanelLangkah8.setRoundTopLeft(50);
+        PanelLangkah8.setRoundTopRight(50);
+        PanelLangkah8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        LabelLangkah8.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelLangkah8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelLangkah8.setText("Langkah 8: Posisi Kaki");
+        PanelLangkah8.add(LabelLangkah8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 470, -1));
+
+        GambarLangkah8.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
+        GambarLangkah8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        GambarLangkah8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iamges_Early/legs1.jpg"))); // NOI18N
+        PanelLangkah8.add(GambarLangkah8, new org.netbeans.lib.awtextra.AbsoluteConstraints(235, 50, 100, 150));
+
+        jPanel1.add(PanelLangkah8, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 1090, 560, 220));
+
+        PanelLangkah9.setBackground(new java.awt.Color(255, 255, 255));
+        PanelLangkah9.setRoundBottomLeft(50);
+        PanelLangkah9.setRoundBottomRight(50);
+        PanelLangkah9.setRoundTopLeft(50);
+        PanelLangkah9.setRoundTopRight(50);
+        PanelLangkah9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        LabelLangkah9.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelLangkah9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelLangkah9.setText("Langkah 9: Beban Yang Mencerminkan Situasi");
+        PanelLangkah9.add(LabelLangkah9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 480, -1));
+
+        LabelScoreLangkah9.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelScoreLangkah9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelScoreLangkah9.setText("Score 0");
+        LabelScoreLangkah9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        PanelLangkah9.add(LabelScoreLangkah9, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, 390, 20));
+
+        LabelKetScoreLangkah9.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
+        LabelKetScoreLangkah9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelKetScoreLangkah9.setText("Jika beban < 2 kg (terputus-putus)");
+        LabelKetScoreLangkah9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        PanelLangkah9.add(LabelKetScoreLangkah9, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 80, 390, -1));
+
+        GambarBorderLangkah9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iamges_Early/WidgetCornerMuscle.png"))); // NOI18N
+        GambarBorderLangkah9.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        PanelLangkah9.add(GambarBorderLangkah9, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 40, 400, 80));
+
+        LabelLangkah9a.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        LabelLangkah9a.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelLangkah9a.setText("Langkah 9a: Penyesuaian Beban");
+        PanelLangkah9.add(LabelLangkah9a, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 480, -1));
+
+        CheckBoxLangkah9.setText("Jika postur tubuh sebagian besar statis (yaitu ditahan ");
+        CheckBoxLangkah9.setEnabled(false);
+        CheckBoxLangkah9.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
+        PanelLangkah9.add(CheckBoxLangkah9, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 150, 370, 30));
+
+        LabelKetCheckBoxLangkah9.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
+        LabelKetCheckBoxLangkah9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelKetCheckBoxLangkah9.setText(">10 menit) Jika beban < 2 kg (terputus-putus)");
+        LabelKetCheckBoxLangkah9.setEnabled(false);
+        LabelKetCheckBoxLangkah9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        PanelLangkah9.add(LabelKetCheckBoxLangkah9, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 175, 370, 20));
+
+        jPanel1.add(PanelLangkah9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 1340, 560, 220));
 
         jScrollPane1.setViewportView(jPanel1);
 
