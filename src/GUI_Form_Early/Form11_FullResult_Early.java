@@ -7,16 +7,26 @@ package GUI_Form_Early;
 
 import Database.Database;
 import GUI_Custom.ScrollBarCustom;
-import static GUI_Form_Early.Form10_Result_Early.ScoreA;
 import static GUI_Form_Early.Form10_Result_Early.ScoreFinal;
+import com.itextpdf.text.Document;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.pdf.PdfWriter;
 import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Image;
+import java.awt.print.PageFormat;
+import java.awt.print.Printable;
+import java.awt.print.PrinterException;
+import java.awt.print.PrinterJob;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.ImageIcon;
-import javax.swing.JTextField;
-import javax.swing.table.DefaultTableModel;
-
+import javax.swing.*;
 /**
  *
  * @author Muhammad Dila
@@ -481,6 +491,33 @@ public class Form11_FullResult_Early extends javax.swing.JFrame {
         }
     }
     
+    public void CetakPDF(JPanel panel){
+        PrinterJob printerJob = PrinterJob.getPrinterJob();
+        printerJob.setJobName("Print Record");
+        printerJob.setPrintable(new Printable() {
+            @Override
+            public int print(Graphics graphics, PageFormat pageFormat, int pageIndex) throws PrinterException {
+                if (pageIndex > 0) {
+                    return Printable.NO_SUCH_PAGE;
+                }
+                
+                Graphics2D graphics2D = (Graphics2D)graphics;
+                graphics2D.translate(pageFormat.getImageableX(), pageFormat.getImageableY());
+                graphics2D.scale(0.5, 0.5);
+                panel.paint(graphics2D);
+                return Printable.PAGE_EXISTS;
+            }
+        });
+        boolean returnResult = printerJob.printDialog();
+        if (returnResult) {
+            try {
+                printerJob.print();
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(this, e);
+            }
+        }
+    }
+    
     public Form11_FullResult_Early() {
         initComponents();
         jScrollPane1.setVerticalScrollBar(new ScrollBarCustom());
@@ -522,6 +559,8 @@ public class Form11_FullResult_Early extends javax.swing.JFrame {
         buttonGroup1 = new javax.swing.ButtonGroup();
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
+        PanelCetakHasil = new GUI_Custom.PanelRound();
+        ButtonCetakHasil = new javax.swing.JButton();
         LabelRula = new javax.swing.JLabel();
         LabelRingkasanLengkap = new javax.swing.JLabel();
         PanelScoreRula = new GUI_Custom.PanelRound();
@@ -626,6 +665,41 @@ public class Form11_FullResult_Early extends javax.swing.JFrame {
             }
         });
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        PanelCetakHasil.setBackground(new java.awt.Color(40, 167, 69));
+        PanelCetakHasil.setRoundBottomLeft(25);
+        PanelCetakHasil.setRoundBottomRight(25);
+        PanelCetakHasil.setRoundTopLeft(25);
+        PanelCetakHasil.setRoundTopRight(25);
+
+        ButtonCetakHasil.setFont(new java.awt.Font("Poppins", 1, 14)); // NOI18N
+        ButtonCetakHasil.setForeground(new java.awt.Color(255, 255, 255));
+        ButtonCetakHasil.setText("CETAK HASIL");
+        ButtonCetakHasil.setContentAreaFilled(false);
+        ButtonCetakHasil.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ButtonCetakHasil.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                ButtonCetakHasilMouseMoved(evt);
+            }
+        });
+        ButtonCetakHasil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonCetakHasilActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout PanelCetakHasilLayout = new javax.swing.GroupLayout(PanelCetakHasil);
+        PanelCetakHasil.setLayout(PanelCetakHasilLayout);
+        PanelCetakHasilLayout.setHorizontalGroup(
+            PanelCetakHasilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(ButtonCetakHasil, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        PanelCetakHasilLayout.setVerticalGroup(
+            PanelCetakHasilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(ButtonCetakHasil, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        jPanel1.add(PanelCetakHasil, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 3010, 130, -1));
 
         LabelRula.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
         LabelRula.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -1145,6 +1219,7 @@ public class Form11_FullResult_Early extends javax.swing.JFrame {
     private void jPanel1MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseMoved
         // TODO add your handling code here:
         PanelBack.setBackground(new java.awt.Color(40,167,69));
+        PanelCetakHasil.setBackground(new java.awt.Color(40,167,69));
     }//GEN-LAST:event_jPanel1MouseMoved
 
     private void ButtonBackMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonBackMouseMoved
@@ -1157,6 +1232,16 @@ public class Form11_FullResult_Early extends javax.swing.JFrame {
         this.dispose();
         new Form10_Result_Early().setVisible(true);
     }//GEN-LAST:event_ButtonBackActionPerformed
+
+    private void ButtonCetakHasilMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonCetakHasilMouseMoved
+        // TODO add your handling code here:
+        PanelCetakHasil.setBackground(Color.BLUE);
+    }//GEN-LAST:event_ButtonCetakHasilMouseMoved
+
+    private void ButtonCetakHasilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonCetakHasilActionPerformed
+        // TODO add your handling code here:
+        CetakPDF(jPanel1);
+    }//GEN-LAST:event_ButtonCetakHasilActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1451,6 +1536,7 @@ public class Form11_FullResult_Early extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Artboard;
     private javax.swing.JButton ButtonBack;
+    private javax.swing.JButton ButtonCetakHasil;
     private GUI_Custom.JCheckBoxCustom ChecKBoxLangkah5;
     private GUI_Custom.JCheckBoxCustom CheckBox1Langkah1;
     private GUI_Custom.JCheckBoxCustom CheckBox1Langkah2;
@@ -1523,6 +1609,7 @@ public class Form11_FullResult_Early extends javax.swing.JFrame {
     private javax.swing.JLabel LabelTitikUmur;
     private javax.swing.JLabel LabelUmur;
     private GUI_Custom.PanelRound PanelBack;
+    private GUI_Custom.PanelRound PanelCetakHasil;
     private GUI_Custom.PanelRound PanelDetailProfile;
     private GUI_Custom.PanelRound PanelLangkah1;
     private GUI_Custom.PanelRound PanelLangkah2;
